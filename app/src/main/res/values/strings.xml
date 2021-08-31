@@ -16,4 +16,5 @@
     <string name="btn_eliminar">ce</string>
     <string name="btn_decimal">.</string>
     <string name="btn_division">/</string>
+    <string name="text_display"></string>
 </resources>
