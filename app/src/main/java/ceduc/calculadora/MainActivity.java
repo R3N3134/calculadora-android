@@ -40,15 +40,96 @@ public class MainActivity extends AppCompatActivity {
         TextView txt_display = (TextView) this.findViewById(R.id.txt_display);
 
         btn_cero.setOnClickListener(new.OnClickListener()) {
-            public void onClick(View v) { setDigito("0"); }
+            public void onClick(View v) {
+                setDigito("0");
+            }
         });
 
         btn_uno.setOnClickListener(new View.OnClickListener() {
-        public void onClick( View v) { setDigitotView("1"); }
+            public void onClick(View v) {
+                setDigitotView("1");
+            }
         });
-    }
+        btn_dos.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("2");
+            }
+        });
+        btn_tres.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("3");
+            }
+        });
+        btn_cuatro.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("4");
+            }
+        });
+        btn_cinco.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("5");
+            }
+        });
+        btn_seis.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("6");
+            }
+        });
+        btn_siete.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("7");
+            }
+        });
+        btn_nueve.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("9");
+            }
+        });
+        btn_eliminar.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("ce");
+            }
+        });
+        btn_espacio.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("←");
+            }
+        });
+        btn_suma.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("+");
+            }
+        });
+        btn_resta.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("-");
+            }
+        });
+        btn_multiplicacion.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("*");
+            }
+        });
+        btn_division.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("/");
+            }
+        });
+        btn_decimal.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito(".");
+            }
+        });
+        btn_igual.setOnClickListener(new.OnClickListener()) {
+            public void onClick(View v) {
+                setDigito("=");
+            }
+        });
 
-    private void setDigitotView(String s) {
+
+
+
+    void setDigitotView(String s) {
         TextView txt_display =(TextView) this.findViewById(R.id.txt_display);
         String actual = txt_display.getText().toString();
         String nuevo = actual + digito;
