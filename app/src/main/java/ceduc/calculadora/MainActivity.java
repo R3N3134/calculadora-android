@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Set;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -40,58 +42,58 @@ public class MainActivity extends AppCompatActivity {
         TextView txt_display = (TextView) this.findViewById(R.id.txt_display);
 
 
-       btn_cero.setOnclickListener(new View.onClickListener(){
-           public void onclick(View view){setDigitotView("0");}
+       btn_cero.setOnClickListener(new View.OnClickListener(){
+           public void onClick(View v){ setDigito("0");}
             });
 
-        btn_uno.setOnclickListener(new View.onClickListener(){
-            public void onclick(View view){setDigitotView("1");}
+        btn_uno.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){ setDigito("1");}
+             });
+
+        btn_dos.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){ setDigito("2");}
         });
 
-        btn_dos.setOnclickListener(new View.onClickListener(){
-            public void onclick(View view){setDigitotView("2");}
+        btn_tres.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) { setDigito("3");}
         });
 
-        btn_tres.setOnclickListener(new View.onClickListener(){
-            public void onclick(View view){setDigitotView("3");}
+        btn_cuatro.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){ setDigito("4");}
         });
 
-        btn_cuatro.setOnclickListener(new View.onClickListener(){
-            public void onclick(View view){setDigitotView("4");}
+        btn_cinco.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) { setDigito("5");}
         });
 
-        btn_cinco.setOnclickListener(new View.onClickListener(){
-            public void onclick(View view){setDigitotView("5");}
+        btn_seis.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) { setDigito("6");}
         });
 
-        btn_seis.setOnclickListener(new View.onClickListener(){
-            public void onclick(View view){setDigitotView("6");}
-        });
-
-        btn_siete.setOnclickListener(new View.onClickListener(){
-            public void onclick(View view){setDigitotView("7");}
-        });
-
-
-        btn_ocho.setOnclickListener(new View.onClickListener(){
-            public void onclick(View view){setDigitotView("8");}
-        });
-
-        btn_nueve.setOnclickListener(new View.onClickListener(){
-            public void onclick(View view){setDigitotView("9");}
+        btn_siete.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){ setDigito("7"); }
         });
 
 
-        btn_suma.setOnclickListener(new View.onClickListener(){
-            public void onclick(View view){setDigitotView("+");}
+        btn_ocho.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){ setDigito("8"); }
+        });
+
+        btn_nueve.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){ setDigito("9"); }
+        });
+
+
+        btn_suma.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){ setDigito("+"); }
         });
 
        }
 
-        void setDigitotView(String Digito) {
+        void setDigito(String digito) {
         TextView txt_display =(TextView) this.findViewById(R.id.txt_display);
         String actual = txt_display.getText().toString();
-        String nuevo = actual + digito;
+            String nuevo = actual + digito;
         txt_display.setText(nuevo);
 
         }

@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <item name="btn_uno" type="id">btn_uno</item>
+    <item name="btn_dos" type="id">btn_dos</item>
     <item name="btn_tres" type="id">btn_tres</item>
+    <item name="btn_cuatro" type="id">btn_cuatro</item>
+    <item name="btn_cinco" type="id">btn_cinco</item>
+    <item name="btn_seis" type="id">btn_seis</item>
+    <item name="btn_siete" type="id">btn_siete</item>
+    <item name="btn_ocho" type="id">btn_ocho</item>
+    <item name="btn_nueve" type="id">btn_nueve</item>
 </resources>
